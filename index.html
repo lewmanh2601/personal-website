@@ -2,27 +2,9 @@
 <html>
 <head>
     <title>My personal website</title>
-    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
     <style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #ffffff;
-    }
-    li {
-        float: left;
-    }
-    li a {
-        display: block;
-        color: black;
-        text-align: center;	
-        padding: 16px;
-    }
-    li a:hover {
-    background-color: #f0f0f0;
-    }
+    
     footer {
       background-image: url("cover.jpg");
       text-align: center;
@@ -30,6 +12,7 @@
     }
     
     </style>
+    
 </head>
 <body>
 
@@ -38,50 +21,45 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="#about">About me</a></li>
     <li><a href="#footer">Contact</a></li>
-    <li><img src="https://user-images.githubusercontent.com/41073981/74113526-b7c94f80-4b72-11ea-829c-dbb1f9160762.jpg" onclick="myfunction();" style="height:35px; width:35px; padding:none; border: none; background:none"></li>
-    <li><button type="submit" style="background-color:rgba(255,255,255,0.0); border:none; height:35px; width:35px" onclick="myfunction"><img src="https://user-images.githubusercontent.com/41073981/74113526-b7c94f80-4b72-11ea-829c-dbb1f9160762.jpg" style="height:35px; width:35px; padding:none; border: none; background:none"/></button></li>
-	<li><input type="button" value="Click me" onclick="myfunction()"></li>
+	<li><button onclick="change(0)"style="background-color:rgba(255,255,255,0.0); border:none; height:40px; width:35px" ><img src="https://user-images.githubusercontent.com/41073981/74113526-b7c94f80-4b72-11ea-829c-dbb1f9160762.jpg" style="height:35px; width:35px; padding:none; border: none; background:none"/></button></li>
+	<li><button onclick="change(1)"style="background-color:rgba(255,255,255,0.0); border:none; height:40px; width:35px" ><img src="https://user-images.githubusercontent.com/41073981/74113517-ab44f700-4b72-11ea-860d-b3fa3d60f27e.jpg" style="height:35px; width:35px; padding:none; border: none; background:none"/></button></li>
 </ul>
 
 <!-- First page -->
 <section class="grid">
-  <section class="col-55">
-  <div style="line-height: 10px">
-    <p class="col1-font" >Hi, I'm</p>
-    <p class="bolden"> RYAN</p>
-  </di>
-  </section><!--
-  --><section class="col-45">
-  <p class="col2-font">LUU.</p>
+  <section id="col-55">
+      <p id="col1-font" >Hi, I'm</p>
+      <p id="bolden"> RYAN</p>
+  </section><section id="col-45">
+  	<p id="col2-font">LUU.</p>
   </section>
 </section>
 
 <!-- Second page -->
 <section class="grid">
 	<section class="col-2-60">
-	<img class="img" src="Me.jpg" alt="Ugly picture of me, glad you're seeing this text">
+	<img id="myImage" src="Me.jpg" width="100" height="180" alt="Ugly picture of me, glad you're seeing this text">
 	</section><!--
 	--><aside style="font: 'Tisa'" class="col-2-40">
-	<h2> Welcome </h2>
-	<h1 id="about">About Me</h1>
+	     <h2> Welcome </h2>
+		 <h1 id="about">About Me</h1>
 	
-	<div style="margin-left: -40px; color: black">
-	  <p style="font-size: 19px; line-height: 44px;">A freshman at Dartmouth College majoring in Computer Science with a minor in Economics.
-	  <br> A proud child of Hanoi, Vietnam with a passion for creating. </p>
-	  <br>
-	  <br>
-	  <br>
-	  <p style="font-size: 17px; color: black" >I play the ukulele, the piano, and whatever games life throw at me. <br>
-	  Want to know more about me? Find out in my next project. <br>
-	  For now, head to end of page to check out my social media! </p>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br> 
-	  <br>
-	  <small>Also a proud member of Unmasked team and hope the guys will forgive me for showing them this way too late:(</small>
-	</div>
+		 <div style="margin-left: -40px; color: black">
+		 	<br>
+	  		<p style="font-size: 19px; line-height: 44px; font-style: italic">A freshman at Dartmouth College majoring in Computer Science with a minor in Economics.
+	  		<br> A proud child of Hanoi, Vietnam with a passion for creating. </p>
+	  		<br>
+	  		<br>
+	  		<br>
+	  		<p style="font-size: 17px; color: black; line-height: 30px" >I play the ukulele, the piano, and whatever games life throw at me. <br>
+	  		Want to know more about me? Find out in my next project. <br>
+	  		For now, head to <a href="#footer">end of page</a> to check out my social media! </p>
+	  		<br>
+	  		<br>
+	  		<br>
+	  		<br>
+	 	    <small>Also a proud member of Unmasked team and hope the guys will forgive me for showing them this way too late:(</small>
+		 </div>
 	
 	</aside>
 </section>
@@ -90,16 +68,37 @@
 <section>
 <footer class="primary-footer group">
 <p id="footer" >Contact me at</p>
+<div style="padding-left: 453px">
+<ul style="background-color: hsla(89, 43%, 51%, 0)">
+	<div style="padding: 10px">
+	<li><a class="active" href="https://www.facebook.com/dung.lewmanh.2601"><img src="fb.png" style="height:35px; width:35px; padding:none; border: none; background:none"/></a></li>
+	<li><a class="active" href="https://www.instagram.com/lewwmanh/"><img src="ins.png" style="height:35px; width:35px; padding:none; border: none; background:none"/></a></li>
+	<li><a class="active" href="https://www.linkedin.com/in/dung-luu-minh-0ab5a014a/"><img src="lin.png" style="height:35px; width:35px; padding:none; border: none; background:none"/></a></li>
+	</div>
+</ul>
+</div>
 </footer>
 
-<p id="demo">JavaScript can change the style of an HTML element.</p>
-
-
-<button type="button" onclick="myFunction()">Click Me!</button>
 <script>
-function myFunction() {
-  document.getElementById("about").color = "red";
+function change(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Me.jpg";
+    document.getElementById("col-55").style.backgroundColor = "#6ed5ff";
+  	document.getElementById("col-45").style.backgroundColor = "white";
+  	document.getElementById("bolden").style.color = "white";
+  	document.getElementById("col2-font").style.color = "#6ed5ff";
+  } else {
+    pic = "Otherme.jpg";
+    document.getElementById("col-55").style.backgroundColor = "#ff6600";
+    document.getElementById("col-45").style.backgroundColor = "black";
+    document.getElementById("bolden").style.color = "black";
+    document.getElementById("col2-font").style.color = "#ff6600";
+  }
+  document.getElementById('myImage').src = pic;
 }
 </script>
+
+    
 </body>
 </html>

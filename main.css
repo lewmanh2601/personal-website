@@ -73,6 +73,33 @@ table {
 }
 /*
   ========================================
+  List
+  ========================================
+*/
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #ffffff;
+}
+li {
+ float: left;
+}
+li a {
+ display: block;
+ color: black;
+ text-align: center;	
+ padding: 16px;
+}
+li a:hover:not(.active) {
+ background-color: #f0f0f0;
+}
+.active {
+ background-color: none;
+}
+/*
+  ========================================
   Buttons
   ========================================
 */
@@ -115,23 +142,25 @@ table {
   Columns first panel
 ========================================
 */
-.col-45 {
+#col-45 {
   width: 45%;
   height: 780px;
   background-color: white;
   text-align: center;
   margin: 50 auto;
+  padding-bottom: 300px;
+  float: right;
 }
-.col-55 {
+#col-55 {
   width: 55%;
   height: 780px;
   background-color: #6ed5ff;
   text-align: center;
   margin: 50 auto;
+  float: left;
 }
-.col-45,
-.col-55 {
-  display: inline-block;
+#col-45,
+#col-55 {
   vertical-align: center;
 }
 
@@ -152,6 +181,7 @@ table {
 .col-2-60 {
   display: inline-block;
   vertical-align: top;
+  height: 780px;
 }
 /*
   ========================================
@@ -179,14 +209,14 @@ body {
   font: 300 16px/22px "Tisa", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-p.col1-font {
+#col1-font {
   text-indent: -220px;
   font-size: 80px;
   color: white;
   padding: 200px 30px 250px 30px;
 }
 
-.bolden {
+#bolden {
   font-size: 150px;
   color: white;
   padding: -30px 30px;
@@ -195,13 +225,14 @@ p.col1-font {
   font-weight: bold;
 }
 
-p.col2-font {
+#col2-font {
   font-size: 150px;
   color: #6ed5ff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 30px;
   font-weight: bold;
+  line-height: 870px;
 }
 
 h1, h2 {
